@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -11,6 +12,22 @@ const Navbar = () => {
         fontSize: "20px",
       }}
     >
+      <div
+        style={{
+          padding: "8px 16px",
+          transition: "background-color 0.3s, color 0.3s",
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.backgroundColor = "#FB923C"; // orange-500
+          e.currentTarget.style.color = "white";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.backgroundColor = "transparent";
+          e.currentTarget.style.color = "inherit";
+        }}
+      >
+        <Link href="/">Home</Link>
+      </div>
       <div
         style={{
           padding: "8px 16px",
@@ -59,7 +76,7 @@ const Navbar = () => {
           e.currentTarget.style.color = "inherit";
         }}
       >
-        Contact
+        <Link href="/contact">Contact</Link>
       </div>
     </div>
   );

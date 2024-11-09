@@ -1,0 +1,60 @@
+/* FeaturedCard.module.css */
+
+.cardContainer {
+  display: flex;
+  border-bottom: 2px solid #000;
+  padding-bottom: 20px;
+  justify-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardContainer:hover {
+  transform: scale(1.1);
+}
+
+.imageWrapper {
+  flex: 0 0 30%;
+  /* 40% of the width for the image */
+}
+
+.cardImage {
+  width: 100%;
+  /* Ensure the image fills the wrapper */
+  height: auto;
+  /* Maintain the image's aspect ratio */
+}
+
+.cardContent {
+  flex: 0 0 60%;
+  /* 60% of the width for the content */
+  padding-left: 20px;
+  /* Space between image and content */
+}
+
+.cardTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.cardInfo {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.yearButton {
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+  padding: 8px 16px;
+}
+
+.sidebar {
+  padding-top: 4px;
+}
+
+.cardParagraph {
+  font-size: 1.125rem;
+  margin-top: 16px;
+}

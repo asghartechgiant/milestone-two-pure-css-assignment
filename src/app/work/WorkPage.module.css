@@ -1,0 +1,21 @@
+/* WorkPage.module.css */
+
+.pageContainer {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.title {
+  font-size: 2.5rem;
+  /* Corresponds to Tailwind's text-4xl */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  /* Corresponds to Tailwind's mb-6 */
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  /* Corresponds to Tailwind's gap-10 */
+}

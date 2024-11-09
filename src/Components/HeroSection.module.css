@@ -1,0 +1,69 @@
+/* HeroSection.module.css */
+
+.heroContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .heroContainer {
+    padding-top: 100px;
+  }
+}
+
+.textSection {
+  grid-column: span 12;
+}
+
+@media (min-width: 1024px) {
+  .textSection {
+    grid-column: span 8;
+  }
+}
+
+.heroTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (min-width: 640px) {
+  .heroTitle {
+    font-size: 44px;
+  }
+}
+
+.heroDescription {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.downloadButton {
+  background-color: #ff6464;
+  border-radius: 4px;
+  padding: 8px 32px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.imageSection {
+  grid-column: span 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.imageSection > img {
+  border-radius: 50%;
+}
+
+@media (min-width: 1024px) {
+  .imageSection {
+    grid-column: span 4;
+  }
+}

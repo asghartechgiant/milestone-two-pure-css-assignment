@@ -1,0 +1,28 @@
+/* BlogSection.module.css */
+
+.container {
+  background-color: #edf7fa;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .cardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

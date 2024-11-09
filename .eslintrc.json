@@ -4,6 +4,7 @@
     "no-unused-vars": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "no-irregular-whitespace": "off",
-    "no-mixed-spaces-and-tabs": "off"
+    "no-mixed-spaces-and-tabs": "off",
+    "react/no-unescaped-entities": "off"
   }
 }
